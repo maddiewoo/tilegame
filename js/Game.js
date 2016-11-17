@@ -27,6 +27,8 @@ TopDownGame.Game.prototype = {
     var result = this.findObjectsByType('playerStart', this.map, 'objectsLayer')
     this.player = this.game.add.sprite(result[0].x, result[0].y, 'player');
     this.game.physics.arcade.enable(this.player);
+    
+    this.thisgirl = this.game.add.sprite(100, 234, 'thisgirl');
 
     //the camera will follow the player in the world
     this.game.camera.follow(this.player);
