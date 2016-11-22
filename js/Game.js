@@ -28,7 +28,8 @@ TopDownGame.Game.prototype = {
     this.player = this.game.add.sprite(result[0].x, result[0].y, 'player');
     this.game.physics.arcade.enable(this.player);
     
-    this.thisgirl = this.game.add.sprite(100, 234, 'thisgirl');
+    this.thisgirl = this.game.add.sprite(300, 100, 'thisgirl');
+    this.deadrats = this.game.add.sprite(100, 100, 'deadrats');
 
     //the camera will follow the player in the world
     this.game.camera.follow(this.player);
@@ -117,5 +118,8 @@ TopDownGame.Game.prototype = {
   },
   enterDoor: function(player, door) {
     console.log('entering door that will take you to '+door.targetTilemap+' on x:'+door.targetX+' and y:'+door.targetY);
+  },
+  talk: function(player,NPC) {
+      console.log('Hi This Girl')
   },
 };
