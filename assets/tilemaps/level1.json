@@ -24,7 +24,7 @@
         }, 
         {
          "draworder":"topdown",
-         "height":20,
+         "height":0,
          "name":"objectsLayer",
          "objects":[
                 {
@@ -211,10 +211,10 @@
                  "gid":3219,
                  "height":16,
                  "id":10,
-                 "name":"",
+                 "name":"NPC",
                  "properties":
                     {
-                     "sprite":"thiswoman",
+                     "sprite":"thisgirl",
                      "type":"NPC"
                     },
                  "propertytypes":
@@ -226,13 +226,13 @@
                  "type":"",
                  "visible":true,
                  "width":16,
-                 "x":87.3333333333333,
-                 "y":284.666666666667
+                 "x":39.3333,
+                 "y":271.333666666667
                 }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
-         "width":10,
+         "width":0,
          "x":0,
          "y":0
         }],

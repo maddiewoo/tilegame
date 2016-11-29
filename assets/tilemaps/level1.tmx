@@ -105,9 +105,9 @@
     <property name="type" value="item"/>
    </properties>
   </object>
-  <object id="10" name="NPC" gid="3219" x="87.3333" y="284.667" width="16" height="16">
+  <object id="10" name="NPC" gid="3219" x="39.3333" y="271.334" width="16" height="16">
    <properties>
-    <property name="sprite" value="thiswoman"/>
+    <property name="sprite" value="thisgirl"/>
     <property name="type" value="NPC"/>
    </properties>
   </object>
