@@ -53,12 +53,19 @@ TopDownGame.Game.prototype = {
     this.doors = this.game.add.group();
     this.doors.enableBody = true;
     result = this.findObjectsByType('door', this.map, 'objectsLayer');
-
     result.forEach(function(element){
       this.createFromTiledObject(element, this.doors);
     }, this);
   },
-
+ createNPC: function() {
+    //create NPC
+    this.NPC = this.game.add.group();
+    this.NPC.enableBody = true;
+    result = this.findObjectsByType('NPC', this.map, 'objectsLayer');
+     result.forEach(function(element){
+      this.createFromTiledObject(element, this.NPC);
+    }, this);
+  },
   //find objects in a Tiled layer that containt a property called "type" equal to a certain value
   findObjectsByType: function(type, map, layer) {
     var result = new Array();
@@ -87,6 +94,7 @@ TopDownGame.Game.prototype = {
     this.game.physics.arcade.collide(this.player, this.blockedLayer);
     this.game.physics.arcade.overlap(this.player, this.items, this.collect, null, this);
     this.game.physics.arcade.overlap(this.player, this.doors, this.enterDoor, null, this);
+    this.game.physics.arcade.overlap(this.player, this.NPC, this.talk, null, this);
 
     //player movement
     
@@ -119,7 +127,14 @@ TopDownGame.Game.prototype = {
   enterDoor: function(player, door) {
     console.log('entering door that will take you to '+door.targetTilemap+' on x:'+door.targetX+' and y:'+door.targetY);
   },
+<<<<<<< Updated upstream
   talk: function(player,NPC) {
       console.log('Hi This Girl')
   },
 };
+=======
+    talk: function(player, NPC) {
+        console.log ('Hi NPC');
+    },
+};
+>>>>>>> Stashed changes
