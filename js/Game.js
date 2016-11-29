@@ -95,7 +95,7 @@ TopDownGame.Game.prototype = {
     this.game.physics.arcade.collide(this.player, this.blockedLayer);
     this.game.physics.arcade.overlap(this.player, this.items, this.collect, null, this);
     this.game.physics.arcade.overlap(this.player, this.doors, this.enterDoor, null, this);
-    this.game.physics.arcade.overlap(this.player, this.NPC, this.talk, null, this);
+    this.game.physics.arcade.overlap(this.player, this.thisgirl, this.talk, null, this);
 
     //player movement
     
