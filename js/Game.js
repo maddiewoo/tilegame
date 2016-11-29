@@ -29,7 +29,6 @@ TopDownGame.Game.prototype = {
     this.game.physics.arcade.enable(this.player);
     
     this.thisgirl = this.game.add.sprite(300, 100, 'thisgirl');
-    this.deadrats = this.game.add.sprite(100, 100, 'deadrats');
 
     //the camera will follow the player in the world
     this.game.camera.follow(this.player);
