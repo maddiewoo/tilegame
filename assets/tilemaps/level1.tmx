@@ -1,78 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="10" height="20" tilewidth="16" tileheight="16" nextobjectid="11">
  <tileset firstgid="1" name="tiles" tilewidth="16" tileheight="16" tilecount="3520" columns="44">
-  <image source="../images/tiles.png" width="705" height="1280"/>
+  <image source="../../../../GitHub/tilegame/assets/images/tiles.png" width="705" height="1280"/>
  </tileset>
  <tileset firstgid="3521" name="tiles" tilewidth="16" tileheight="16" tilecount="3520" columns="44">
-  <image source="../images/tiles.png" width="705" height="1280"/>
+  <image source="../../../../GitHub/tilegame/assets/images/tiles.png" width="705" height="1280"/>
  </tileset>
- <layer name="backgroundLayer" width="10" height="20">
+ <layer name="backgroundLayer" width="10" height="20" visible="0">
   <data encoding="csv">
-50,50,50,50,50,50,50,50,50,50,
-50,50,50,50,50,50,50,50,50,50,
-50,50,50,50,50,50,50,50,50,50,
-50,50,50,50,50,50,50,50,50,50,
-50,50,50,50,50,50,50,50,50,50,
-50,50,50,50,50,50,50,50,50,50,
-50,50,50,50,50,50,50,50,50,50,
-50,50,50,50,50,50,50,50,50,50,
-50,50,50,50,50,50,50,50,50,50,
-50,50,50,50,50,50,50,50,50,50,
-50,50,50,50,50,50,50,50,50,50,
-50,50,50,50,50,50,50,50,50,50,
-50,50,50,50,50,50,50,50,50,50,
-50,50,50,50,50,50,50,50,50,50,
-50,50,50,50,50,50,50,2998,50,50,
-50,50,50,50,50,50,50,50,50,50,
-50,50,50,50,50,50,50,50,50,50,
-50,50,50,50,50,50,50,50,50,50,
-50,50,50,50,50,50,50,50,50,50,
-50,50,50,50,50,50,50,50,50,50
+3570,3570,3570,3570,3570,3570,3570,3570,3570,3570,
+3570,3570,3570,3570,3570,3570,3570,3570,3570,3570,
+3570,3570,3570,3570,3570,3570,3570,3570,3570,3570,
+3570,3570,3570,3570,3570,3570,3570,3570,3570,3570,
+3570,3570,3570,3570,3570,3570,3570,3570,3570,3570,
+3570,3570,3570,3570,3570,3570,3570,3570,3570,3570,
+3570,3570,3570,3570,3570,3570,3570,3570,3570,3570,
+3570,3570,3570,3570,3570,3570,3570,3570,3570,3570,
+3570,3570,3570,3570,3570,3570,3570,3570,3570,3570,
+3570,3570,3570,3570,3570,3570,3570,3570,3570,3570,
+3570,3570,3570,3570,3570,3570,3570,3570,3570,3570,
+3570,3570,3570,3570,3570,3570,3570,3570,3570,3570,
+3570,3570,3570,3570,3570,3570,3570,3570,3570,3570,
+3570,3570,3570,3570,3570,3570,3570,3570,3570,3570,
+3570,3570,3570,3570,3570,3570,3570,6518,3570,3570,
+3570,3570,3570,3570,3570,3570,3570,3570,3570,3570,
+3570,3570,3570,3570,3570,3570,3570,3570,3570,3570,
+3570,3570,3570,3570,3570,3570,3570,3570,3570,3570,
+3570,3570,3570,3570,3570,3570,3570,3570,3570,3570,
+3570,3570,3570,3570,3570,3570,3570,3570,3570,3570
 </data>
  </layer>
- <layer name="blockedLayer" width="10" height="20">
+ <layer name="blockedLayer" width="10" height="20" visible="0">
   <data encoding="csv">
-1896,1896,1896,1896,1896,1896,1896,1896,1896,1896,
-1896,0,0,0,0,1896,1896,1896,1896,1896,
-1896,0,0,0,0,0,0,1896,1896,1896,
-1896,0,0,222,0,0,0,0,1896,1896,
-222,0,0,222,0,0,0,0,0,222,
-222,0,0,222,1632,1632,1632,0,0,222,
-222,0,0,222,0,0,0,0,0,222,
-222,0,0,222,0,0,0,0,0,222,
-222,0,0,222,0,0,0,0,0,222,
-222,0,0,222,0,0,0,0,0,222,
-222,0,0,222,222,222,222,222,222,222,
-222,0,0,0,0,0,0,0,0,222,
-222,0,0,0,0,0,0,0,0,222,
-222,0,0,0,0,0,0,0,0,222,
-222,222,222,222,1721,1721,1721,0,0,222,
-222,0,0,0,0,0,0,0,0,222,
-222,0,0,0,0,0,0,0,0,222,
-222,0,0,0,0,0,0,0,0,222,
-222,0,0,0,0,0,0,0,1896,222,
-222,222,222,222,222,222,222,222,222,222
+5416,5416,5416,5416,5416,5416,5416,5416,5416,5416,
+5416,0,0,0,0,5416,5416,5416,5416,5416,
+5416,0,0,0,0,0,0,5416,5416,5416,
+5416,0,0,3742,0,0,0,0,5416,5416,
+3742,0,0,3742,0,0,0,0,0,3742,
+3742,0,0,3742,5152,5152,5152,0,0,3742,
+3742,0,0,3742,0,0,0,0,0,3742,
+3742,0,0,3742,0,0,0,0,0,3742,
+3742,0,0,3742,0,0,0,0,0,3742,
+3742,0,0,3742,0,0,0,0,0,3742,
+3742,0,0,3742,3742,3742,3742,3742,3742,3742,
+3742,0,0,0,0,0,0,0,0,3742,
+3742,0,0,0,0,0,0,0,0,3742,
+3742,0,0,0,0,0,0,0,0,3742,
+3742,3742,3742,3742,5241,5241,5241,0,0,3742,
+3742,0,0,0,0,0,0,0,0,3742,
+3742,0,0,0,0,0,0,0,0,3742,
+3742,0,0,0,0,0,0,0,0,3742,
+3742,0,0,0,0,0,0,0,5416,3742,
+3742,3742,3742,3742,3742,3742,3742,3742,3742,3742
 </data>
  </layer>
  <objectgroup name="objectsLayer">
-  <object id="1" gid="1216" x="86" y="69" width="16" height="16">
+  <object id="1" gid="4736" x="86" y="69" width="16" height="16">
    <properties>
     <property name="sprite" value="bluecup"/>
     <property name="type" value="item"/>
    </properties>
   </object>
-  <object id="2" gid="1260" x="114" y="207" width="16" height="16">
+  <object id="2" gid="4780" x="114" y="207" width="16" height="16">
    <properties>
     <property name="sprite" value="greencup"/>
     <property name="type" value="item"/>
    </properties>
   </object>
-  <object id="3" gid="71" x="33" y="292" width="16" height="16">
+  <object id="3" gid="3591" x="33" y="292" width="16" height="16">
    <properties>
     <property name="type" value="playerStart"/>
    </properties>
   </object>
-  <object id="4" gid="441" x="108" y="148" width="16" height="16">
+  <object id="4" gid="3961" x="108" y="148" width="16" height="16">
    <properties>
     <property name="sprite" value="browndoor"/>
     <property name="targetTilemap" value="level2"/>
@@ -81,31 +81,31 @@
     <property name="type" value="door"/>
    </properties>
   </object>
-  <object id="5" gid="1216" x="28" y="203" width="16" height="16">
+  <object id="5" gid="4736" x="28" y="203" width="16" height="16">
    <properties>
     <property name="sprite" value="bluecup"/>
     <property name="type" value="item"/>
    </properties>
   </object>
-  <object id="6" gid="1216" x="57" y="269" width="16" height="16">
+  <object id="6" gid="4736" x="57" y="269" width="16" height="16">
    <properties>
     <property name="sprite" value="bluecup"/>
     <property name="type" value="item"/>
    </properties>
   </object>
-  <object id="7" gid="1216" x="116" y="263" width="16" height="16">
+  <object id="7" gid="4736" x="116" y="263" width="16" height="16">
    <properties>
     <property name="sprite" value="bluecup"/>
     <property name="type" value="item"/>
    </properties>
   </object>
-  <object id="8" gid="1260" x="72" y="129" width="16" height="16">
+  <object id="8" gid="4780" x="72" y="129" width="16" height="16">
    <properties>
     <property name="sprite" value="greencup"/>
     <property name="type" value="item"/>
    </properties>
   </object>
-  <object id="10" name="NPC" gid="3219" x="39.3333" y="271.334" width="16" height="16">
+  <object id="10" name="NPC" gid="6739" x="39.3333" y="271.334" width="16" height="16">
    <properties>
     <property name="sprite" value="thisgirl"/>
     <property name="type" value="NPC"/>
