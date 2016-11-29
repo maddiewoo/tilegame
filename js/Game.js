@@ -30,11 +30,8 @@ TopDownGame.Game.prototype = {
     this.thisgirl = this.game.add.sprite(50, 30, 'thisgirl');
     
     
-<<<<<<< Updated upstream
     this.thisgirl = this.game.add.sprite(300, 100, 'thisgirl');
 
-=======
->>>>>>> Stashed changes
     //the camera will follow the player in the world
     this.game.camera.follow(this.player);
 
