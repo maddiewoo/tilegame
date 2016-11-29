@@ -214,7 +214,7 @@
                  "name":"NPC",
                  "properties":
                     {
-                     "sprite":"tiles",
+                     "sprite":"thisgirl",
                      "type":"NPC"
                     },
                  "propertytypes":
