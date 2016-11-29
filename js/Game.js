@@ -127,14 +127,7 @@ TopDownGame.Game.prototype = {
   enterDoor: function(player, door) {
     console.log('entering door that will take you to '+door.targetTilemap+' on x:'+door.targetX+' and y:'+door.targetY);
   },
-<<<<<<< Updated upstream
-  talk: function(player,NPC) {
+  talk: function(player, NPC) {
       console.log('Hi This Girl')
   },
 };
-=======
-    talk: function(player, NPC) {
-        console.log ('Hi NPC');
-    },
-};
->>>>>>> Stashed changes
