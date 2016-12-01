@@ -31,6 +31,10 @@ TopDownGame.Game.prototype = {
       
     result = this.findObjectsByType('NPC', this.map, 'objectsLayer')
     this.thisgirl = this.game.add.sprite(result[0].x, result[0].y, 'thisgirl');
+      
+    this.game.physics.arcade.enable(this.thisgirl);
+      
+    this.thisgirl.body.immovable = true;
 
     //the camera will follow the player in the world
     this.game.camera.follow(this.player);
@@ -95,7 +99,7 @@ TopDownGame.Game.prototype = {
     this.game.physics.arcade.collide(this.player, this.blockedLayer);
     this.game.physics.arcade.overlap(this.player, this.items, this.collect, null, this);
     this.game.physics.arcade.overlap(this.player, this.doors, this.enterDoor, null, this);
-    this.game.physics.arcade.overlap(this.player, this.thisgirl, this.talk, null, this);
+    this.game.physics.arcade.collide(this.player, this.thisgirl, this.talk, null, this);
 
     //player movement
     
