@@ -37,12 +37,13 @@ TopDownGame.Game.prototype = {
       
     this.thisgirl.body.immovable = true;
       
-    result = this.findObjectsByType('NPC', this.map, 'objectsLayer')
     this.thisboy = this.game.add.sprite(result[0].x, result[0].y, 'thisboy');
       
     this.game.physics.arcade.enable(this.thisboy);
       
     this.thisboy.body.immovable = true;
+      
+    console.log(result);
 
     //the camera will follow the player in the world
     this.game.camera.follow(this.player);
