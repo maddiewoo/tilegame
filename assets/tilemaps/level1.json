@@ -187,7 +187,7 @@
                 }, 
                 {
                  "gid":1260,
-                 "height":26,
+                 "height":30,
                  "id":8,
                  "name":"",
                  "properties":
@@ -203,7 +203,7 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":22,
+                 "width":27,
                  "x":71,
                  "y":270
                 }, 
@@ -228,6 +228,28 @@
                  "width":16,
                  "x":25.3333,
                  "y":265.334
+                }, 
+                {
+                 "gid":3318,
+                 "height":16,
+                 "id":11,
+                 "name":"NPC",
+                 "properties":
+                    {
+                     "sprite":"thisboy",
+                     "type":"NPC"
+                    },
+                 "propertytypes":
+                    {
+                     "sprite":"string",
+                     "type":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":33,
+                 "y":38
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -236,7 +258,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":11,
+ "nextobjectid":12,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tileheight":16,
