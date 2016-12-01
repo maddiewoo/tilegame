@@ -17,11 +17,11 @@
 50,50,50,50,50,50,50,50,50,50,
 50,50,50,50,50,50,50,50,50,50,
 50,50,50,50,50,50,50,50,50,50,
-50,50,50,50,50,50,50,50,50,50,
-50,50,50,50,50,50,50,50,50,50,
-50,50,50,50,50,50,50,2998,50,50,
-50,50,50,50,50,50,50,50,50,50,
-50,50,50,50,50,50,50,50,50,50,
+50,50,50,50,50,50,50,50,0,50,
+50,50,50,50,50,50,50,50,0,50,
+50,50,50,50,50,50,50,2998,0,50,
+50,50,50,50,50,50,50,50,225,50,
+50,50,50,50,50,50,50,50,0,50,
 50,50,50,50,50,50,50,50,50,50,
 50,50,50,50,50,50,50,50,50,50,
 50,50,50,50,50,50,50,50,50,50
@@ -32,33 +32,33 @@
 1896,1896,1896,1896,1896,1896,1896,1896,1896,1896,
 1896,0,0,0,0,1896,1896,1896,1896,1896,
 1896,0,0,0,0,0,0,1896,1896,1896,
-1896,0,0,222,0,0,0,0,1896,1896,
-222,0,0,222,0,0,0,0,0,222,
-222,0,0,222,1632,1632,1632,0,0,222,
-222,0,0,222,0,0,0,0,0,222,
-222,0,0,222,0,0,0,0,0,222,
-222,0,0,222,0,0,0,0,0,222,
-222,0,0,222,0,0,0,0,0,222,
-222,0,0,222,222,222,222,222,222,222,
+1896,0,0,0,0,0,0,0,1896,1896,
 222,0,0,0,0,0,0,0,0,222,
-222,0,0,0,0,0,0,0,0,222,
-222,0,0,0,0,0,0,0,0,222,
-222,222,222,222,1721,1721,1721,0,0,222,
-222,0,0,0,0,0,0,0,0,222,
-222,0,0,0,0,0,0,0,0,222,
-222,0,0,0,0,0,0,0,0,222,
-222,0,0,0,0,0,0,0,1896,222,
+222,0,0,0,1632,1632,0,178,178,222,
+222,178,178,178,178,178,0,178,0,0,
+222,0,0,0,0,0,0,178,0,0,
+222,0,0,0,0,0,0,178,0,0,
+222,0,178,178,0,0,0,178,178,0,
+222,0,0,222,222,222,222,222,222,0,
+222,0,0,178,0,0,0,0,222,0,
+222,0,0,0,0,0,0,0,180,0,
+222,0,0,178,0,0,0,0,182,0,
+222,222,222,222,222,222,222,0,227,0,
+222,0,0,0,0,0,0,0,0,0,
+222,0,0,0,0,0,0,0,178,0,
+222,0,0,178,178,178,178,222,222,0,
+222,0,0,178,0,0,0,0,0,0,
 222,222,222,222,222,222,222,222,222,222
 </data>
  </layer>
  <objectgroup name="objectsLayer">
-  <object id="1" gid="1216" x="86" y="69" width="16" height="16">
+  <object id="1" gid="1216" x="74" y="148" width="28" height="27">
    <properties>
     <property name="sprite" value="bluecup"/>
     <property name="type" value="item"/>
    </properties>
   </object>
-  <object id="2" gid="1260" x="114" y="207" width="16" height="16">
+  <object id="2" gid="1260" x="82" y="215" width="25" height="26">
    <properties>
     <property name="sprite" value="greencup"/>
     <property name="type" value="item"/>
@@ -69,7 +69,7 @@
     <property name="type" value="playerStart"/>
    </properties>
   </object>
-  <object id="4" gid="441" x="108" y="148" width="16" height="16">
+  <object id="4" gid="441" x="136" y="132" width="18" height="21">
    <properties>
     <property name="sprite" value="browndoor"/>
     <property name="targetTilemap" value="level2"/>
@@ -78,31 +78,31 @@
     <property name="type" value="door"/>
    </properties>
   </object>
-  <object id="5" gid="1216" x="28" y="203" width="16" height="16">
+  <object id="5" gid="1216" x="86" y="75" width="25" height="27">
    <properties>
     <property name="sprite" value="bluecup"/>
     <property name="type" value="item"/>
    </properties>
   </object>
-  <object id="6" gid="1216" x="57" y="269" width="16" height="16">
+  <object id="6" gid="1216" x="69" y="305" width="16" height="16">
    <properties>
     <property name="sprite" value="bluecup"/>
     <property name="type" value="item"/>
    </properties>
   </object>
-  <object id="7" gid="1216" x="116" y="263" width="16" height="16">
+  <object id="7" gid="1216" x="18" y="210" width="27" height="31">
    <properties>
     <property name="sprite" value="bluecup"/>
     <property name="type" value="item"/>
    </properties>
   </object>
-  <object id="8" gid="1260" x="72" y="129" width="16" height="16">
+  <object id="8" gid="1260" x="71" y="270" width="22" height="26">
    <properties>
     <property name="sprite" value="greencup"/>
     <property name="type" value="item"/>
    </properties>
   </object>
-  <object id="10" name="NPC" gid="3219" x="39.3333" y="271.334" width="16" height="16">
+  <object id="10" name="NPC" gid="3219" x="25.3333" y="265.334" width="16" height="16">
    <properties>
     <property name="sprite" value="thisgirl"/>
     <property name="type" value="NPC"/>
