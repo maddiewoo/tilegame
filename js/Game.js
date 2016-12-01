@@ -42,8 +42,6 @@ TopDownGame.Game.prototype = {
     this.game.physics.arcade.enable(this.thisboy);
       
     this.thisboy.body.immovable = true;
-      
-    console.log(result);
 
     //the camera will follow the player in the world
     this.game.camera.follow(this.player);
@@ -84,7 +82,6 @@ TopDownGame.Game.prototype = {
   findObjectsByType: function(type, map, layer) {
     var result = new Array();
     map.objects[layer].forEach(function(element){
-        console.log(element.properties);
       if(element.properties.type === type) {
         //Phaser uses top left, Tiled bottom left so we have to adjust
         //also keep in mind that the cup images are a bit smaller than the tile which is 16x16
@@ -98,7 +95,6 @@ TopDownGame.Game.prototype = {
   //create a sprite from an object
   createFromTiledObject: function(element, group) {
     var sprite = group.create(element.x, element.y, element.properties.sprite);
-
       //copy all properties to the sprite
       Object.keys(element.properties).forEach(function(key){
         sprite[key] = element.properties[key];
