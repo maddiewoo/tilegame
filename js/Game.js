@@ -37,7 +37,7 @@ TopDownGame.Game.prototype = {
       
     this.thisgirl.body.immovable = true;
       
-    this.thisboy = this.game.add.sprite(result[0].x, result[0].y, 'thisboy');
+    this.thisboy = this.game.add.sprite(result[1].x, result[1].y, 'thisboy');
       
     this.game.physics.arcade.enable(this.thisboy);
       
@@ -84,6 +84,7 @@ TopDownGame.Game.prototype = {
   findObjectsByType: function(type, map, layer) {
     var result = new Array();
     map.objects[layer].forEach(function(element){
+        console.log(element.properties);
       if(element.properties.type === type) {
         //Phaser uses top left, Tiled bottom left so we have to adjust
         //also keep in mind that the cup images are a bit smaller than the tile which is 16x16
