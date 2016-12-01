@@ -28,6 +28,7 @@ TopDownGame.Game.prototype = {
     this.player = this.game.add.sprite(result[0].x, result[0].y, 'player');    
       
     this.game.physics.arcade.enable(this.player);
+    this.player.body.collideWorldBounds = true
       
     result = this.findObjectsByType('NPC', this.map, 'objectsLayer')
     this.thisgirl = this.game.add.sprite(result[0].x, result[0].y, 'thisgirl');
