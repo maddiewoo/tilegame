@@ -170,13 +170,11 @@ TopDownGame.Game.prototype = {
       this.showDialog("Hello Thisgirl")
       
   },
-<<<<<<< Updated upstream
     teleport: function(player, NPC) {
         this.player.x = this.startingx 
         this.player.y = this.startingy
             
-    }
-=======
+    },
     showDialog: function(message){
         
       if (this.dialog != null && this.dialog.message == message) {
@@ -209,5 +207,4 @@ TopDownGame.Game.prototype = {
       
       this.textbox = container;
     },
->>>>>>> Stashed changes
 };
