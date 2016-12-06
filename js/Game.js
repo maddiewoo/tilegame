@@ -167,11 +167,47 @@ TopDownGame.Game.prototype = {
     console.log('entering door that will take you to '+door.targetTilemap+' on x:'+door.targetX+' and y:'+door.targetY);
   },
   talk: function(player, NPC) {
-      console.log('Hi This Girl')
+      this.showDialog("Hello Thisgirl")
+      
   },
+<<<<<<< Updated upstream
     teleport: function(player, NPC) {
         this.player.x = this.startingx 
         this.player.y = this.startingy
             
     }
+=======
+    showDialog: function(message){
+        
+      if (this.dialog != null && this.dialog.message == message) {
+          return;
+      }
+      
+      var container = this.game.add.sprite (90, 90, 'textbox'); 
+      
+      container.anchor.x = 0.5;
+      container.anchor.y = 0;
+      
+      container.scale.setTo (0.6,0.4);
+      
+      container.x = this.camera.width / 2;
+      container.y = this.camera.height - container.height * 1.1;
+      
+      container.fixedToCamera = true;
+      
+      container.alpha = 0.8;
+      
+      var text = this.game.add.text(0, 0, message, { font: 'bold 45px Arial', fill: '#00ff00' });
+      text.wordWrapWidth = container.width * 1;
+      text.wordWrap = true;
+      
+      text.anchor.set(0.5, 0);
+      
+      container.addChild(text);
+      
+      container.message = message;
+      
+      this.textbox = container;
+    },
+>>>>>>> Stashed changes
 };
