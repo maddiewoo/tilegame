@@ -151,8 +151,15 @@ TopDownGame.Game.prototype = {
     collectable.destroy();
   },
   enterDoor: function(player, door) {
-    this.player.x = this.teleportx
+    
+      if (typeof door.targetTilemap == 'undefined' ||door.targetTilemap == null) {
+          console.log("Do nothing");
+          return;
+      }
+    
+      this.player.x = this.teleportx
     this.player.y = this.teleporty
+    
   },
   talk: function(player, NPC) {
       this.showDialog("Hello Thisgirl")
