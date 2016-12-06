@@ -20,7 +20,7 @@
 50,50,50,50,50,50,50,50,0,50,
 50,50,50,50,50,50,50,50,0,50,
 50,50,50,50,50,50,50,2998,225,50,
-50,50,50,50,50,50,50,50,225,50,
+50,50,50,50,50,95,50,50,225,50,
 50,50,50,50,50,50,50,50,0,50,
 50,50,50,50,50,50,50,50,50,50,
 50,50,50,50,50,50,50,50,50,50,
@@ -58,7 +58,7 @@
     <property name="type" value="item"/>
    </properties>
   </object>
-  <object id="2" gid="1260" x="81" y="215" width="26" height="26">
+  <object id="2" gid="1260" x="49" y="188" width="71" height="101">
    <properties>
     <property name="sprite" value="greencup"/>
     <property name="type" value="item"/>
@@ -108,7 +108,7 @@
     <property name="type" value="NPC"/>
    </properties>
   </object>
-  <object id="11" name="NPC" gid="3318" x="33" y="38" width="16" height="16">
+  <object id="11" name="NPP" gid="3318" x="33" y="38" width="16" height="16">
    <properties>
     <property name="sprite" value="thisboy"/>
     <property name="type" value="NPC"/>
