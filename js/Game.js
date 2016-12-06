@@ -25,50 +25,23 @@ TopDownGame.Game.prototype = {
 
     //create player
     var result = this.findObjectsByType('playerStart', this.map, 'objectsLayer')
-    this.player = this.game.add.sprite(result[0].x, result[0].y, 'player');
-      
-    this.startingx = this.player.x
-    this.startingy = this.player.y
-    
+    this.player = this.game.add.sprite(result[0].x, result[0].y, 'player');    
       
     this.game.physics.arcade.enable(this.player);
     this.player.body.collideWorldBounds = true
       
     result = this.findObjectsByType('NPC', this.map, 'objectsLayer')
     this.thisgirl = this.game.add.sprite(result[0].x, result[0].y, 'thisgirl');
-
       
     this.game.physics.arcade.enable(this.thisgirl);
       
     this.thisgirl.body.immovable = true;
-
       
     this.thisboy = this.game.add.sprite(result[1].x, result[1].y, 'thisboy');
       
     this.game.physics.arcade.enable(this.thisboy);
       
     this.thisboy.body.immovable = true;
-
-    
-    var tween = this.game.add.tween(this.thisboy);
-    
-     tween.to({ x: [this.thisboy.x+50, this.thisboy.x]}, 3000, "Linear");
-      tween.loop(true);
-      tween.start();
-    
-    
-
-
-
-    
-
-
-    //var  tween2 = this.game.add.tween(this.thisgirl.scale);
-    //tween2.to({x:0.5,y:0.5}, 3000, Phaser.Easing.Elastic.Out, true, 100);
-    //tween.chain(tween2)
-    tween.loop(true);
-
-
 
     //the camera will follow the player in the world
     this.game.camera.follow(this.player);
@@ -86,6 +59,11 @@ TopDownGame.Game.prototype = {
     result.forEach(function(element){
       this.createFromTiledObject(element, this.items);
     }, this);
+      
+      this.score = 0;
+   
+ this.scoreText = this.game.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#fff' });
+      this.scoreText.fixedToCamera = true;
   },
   createDoors: function() {
     //create doors
@@ -95,6 +73,10 @@ TopDownGame.Game.prototype = {
     result.forEach(function(element){
       this.createFromTiledObject(element, this.doors);
     }, this);
+      
+      //teleport from door1 to door2
+      this.teleportx = result[1].x 
+      this.teleporty = result[1].y;
   },
  createNPC: function() {
     //create NPC
@@ -133,7 +115,7 @@ TopDownGame.Game.prototype = {
     this.game.physics.arcade.overlap(this.player, this.items, this.collect, null, this);
     this.game.physics.arcade.overlap(this.player, this.doors, this.enterDoor, null, this);
     this.game.physics.arcade.collide(this.player, this.thisgirl, this.talk, null, this);
-    this.game.physics.arcade.collide(this.player, this.thisboy, this.teleport, null, this);
+    this.game.physics.arcade.collide(this.player, this.thisboy, this.talk, null, this);
 
     //player movement
     
@@ -159,12 +141,25 @@ TopDownGame.Game.prototype = {
   },
   collect: function(player, collectable) {
     console.log('yummy!');
+       
+      this.score += 10;
+    this.scoreText.text = 'Score: ' + this.score;
+
+      
 
     //remove sprite
     collectable.destroy();
   },
   enterDoor: function(player, door) {
-    console.log('entering door that will take you to '+door.targetTilemap+' on x:'+door.targetX+' and y:'+door.targetY);
+    
+      if (typeof door.targetTilemap == 'undefined' ||door.targetTilemap == null) {
+          console.log("Do nothing");
+          return;
+      }
+    
+      this.player.x = this.teleportx
+    this.player.y = this.teleporty
+    
   },
   talk: function(player, NPC) {
       this.showDialog("Hello Thisgirl")
