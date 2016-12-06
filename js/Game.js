@@ -73,6 +73,10 @@ TopDownGame.Game.prototype = {
     result.forEach(function(element){
       this.createFromTiledObject(element, this.doors);
     }, this);
+      
+      //teleport from door1 to door2
+      this.teleportx = result[1].x 
+      this.teleporty = result[1].y;
   },
  createNPC: function() {
     //create NPC
@@ -147,7 +151,8 @@ TopDownGame.Game.prototype = {
     collectable.destroy();
   },
   enterDoor: function(player, door) {
-    console.log('entering door that will take you to '+door.targetTilemap+' on x:'+door.targetX+' and y:'+door.targetY);
+    this.player.x = this.teleportx
+    this.player.y = this.teleporty
   },
   talk: function(player, NPC) {
       this.showDialog("Hello Thisgirl")
