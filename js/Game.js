@@ -169,6 +169,11 @@ TopDownGame.Game.prototype = {
   talk: function(player, NPC) {
       this.showDialog("Hello Thisgirl")
       
+      this.textbox.visible = true;
+      
+      if (this.checkCollision.player = false){
+          this.textbox.visible = false;
+      }
   },
     teleport: function(player, NPC) {
         this.player.x = this.startingx 
@@ -177,7 +182,7 @@ TopDownGame.Game.prototype = {
     },
     showDialog: function(message){
         
-      if (this.dialog != null && this.dialog.message == message) {
+      if (this.textbox != null && this.textbox.message == message) {
           return;
       }
       
