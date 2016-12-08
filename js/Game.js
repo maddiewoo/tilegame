@@ -36,12 +36,29 @@ TopDownGame.Game.prototype = {
     this.game.physics.arcade.enable(this.thisgirl);
       
     this.thisgirl.body.immovable = true;
-      
+    
+      // creating thisboy
     this.thisboy = this.game.add.sprite(result[1].x, result[1].y, 'thisboy');
       
     this.game.physics.arcade.enable(this.thisboy);
       
     this.thisboy.body.immovable = true;
+      
+    this.startingx = this.player.x
+    this.startingy = this.player.y
+      
+      //made this boy movable
+    var tween = this.game.add.tween(this.thisboy);
+    
+     tween.to({ x: [this.thisboy.x+50, this.thisboy.x]}, 3000, "Linear");
+      tween.loop(true);
+      tween.start();
+    
+      this.enemy2 = this.game.add.sprite(10, 10, 'enemy1');
+      this.game.physics.arcade.enable(this.enemy2);
+      this.enemy2.body.immovable = true;
+    
+      
 
     //the camera will follow the player in the world
     this.game.camera.follow(this.player);
@@ -116,6 +133,7 @@ TopDownGame.Game.prototype = {
     this.game.physics.arcade.overlap(this.player, this.doors, this.enterDoor, null, this);
     this.game.physics.arcade.collide(this.player, this.thisgirl, this.talk, null, this);
     this.game.physics.arcade.collide(this.player, this.thisboy, this.talk, null, this);
+    this.game.physics.arcade.collide(this.player, this.enemy1, this.teleport, null, this);
 
     //player movement
     
@@ -166,11 +184,9 @@ TopDownGame.Game.prototype = {
       
       this.textbox.visible = true;
       
-      if (this.checkCollision.player = false){
-          this.textbox.visible = false;
-      }
+      
   },
-    teleport: function(player, NPC) {
+    teleport: function(player, NPC) { console.log("this returns to starting spot" +this.startingx        +this.startingy);
         this.player.x = this.startingx 
         this.player.y = this.startingy
             

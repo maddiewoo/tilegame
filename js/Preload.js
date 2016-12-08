@@ -21,6 +21,7 @@ TopDownGame.Preload.prototype = {
     this.load.image('thisgirl', 'assets/images/thisgirl.png');
     this.load.image('thisboy', 'assets/images/thisboy.png');
     this.load.image('textbox', 'assets/images/textbox.jpg');
+    this.load.image('enemy1', 'assets/images/enemy1.png');
     
   },
   create: function() {
