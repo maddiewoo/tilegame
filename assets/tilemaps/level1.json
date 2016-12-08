@@ -219,11 +219,13 @@
                  "properties":
                     {
                      "sprite":"thisgirl",
+                     "text":"Find boy",
                      "type":"NPC"
                     },
                  "propertytypes":
                     {
                      "sprite":"string",
+                     "text":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -241,11 +243,13 @@
                  "properties":
                     {
                      "sprite":"thisboy",
+                     "text":"go green",
                      "type":"NPC"
                     },
                  "propertytypes":
                     {
                      "sprite":"string",
+                     "text":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -362,8 +366,8 @@
                  "type":"",
                  "visible":true,
                  "width":16,
-                 "x":17,
-                 "y":544
+                 "x":18,
+                 "y":576
                 }, 
                 {
                  "gid":343,
@@ -597,7 +601,7 @@
          "margin":0,
          "name":"boss",
          "spacing":0,
-         "tilecount":6,
+         "tilecount":0,
          "tileheight":16,
          "tilewidth":16
         }],

@@ -10,7 +10,7 @@
  <tileset firstgid="3521" name="test" tilewidth="16" tileheight="16" tilecount="1" columns="1">
   <image source="../../../../Desktop/ttt.jpg" width="20" height="27"/>
  </tileset>
- <tileset firstgid="3522" name="boss" tilewidth="16" tileheight="16" tilecount="6" columns="2">
+ <tileset firstgid="3522" name="boss" tilewidth="16" tileheight="16" tilecount="0" columns="2">
   <image source="../../../../Desktop/boss.jpg" width="40" height="52"/>
  </tileset>
  <layer name="backgroundLayer" width="10" height="60" offsetx="-1" offsety="-2">
@@ -196,12 +196,14 @@
   <object id="10" name="NPC" gid="3219" x="25.3333" y="265.334" width="16" height="16">
    <properties>
     <property name="sprite" value="thisgirl"/>
+    <property name="text" value="Find boy"/>
     <property name="type" value="NPC"/>
    </properties>
   </object>
   <object id="11" name="NPP" gid="3318" x="33" y="38" width="16" height="16">
    <properties>
     <property name="sprite" value="thisboy"/>
+    <property name="text" value="go green"/>
     <property name="type" value="NPC"/>
    </properties>
   </object>
@@ -229,7 +231,7 @@
     <property name="type" value="item"/>
    </properties>
   </object>
-  <object id="19" name="monster" gid="2911" x="17" y="544" width="16" height="16">
+  <object id="19" name="monster" gid="2911" x="18" y="576" width="16" height="16">
    <properties>
     <property name="sprite" value="monster"/>
     <property name="type" value="monster"/>
