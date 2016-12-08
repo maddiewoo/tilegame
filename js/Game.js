@@ -203,7 +203,7 @@ TopDownGame.Game.prototype = {
     
   },
   talk: function(player, NPC) {
-      this.showDialog("Hello Thisgirl")
+      this.showDialog("Hey")
       
       this.textbox.visible = true;
       
