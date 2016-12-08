@@ -21,7 +21,8 @@ TopDownGame.Game.prototype = {
     this.backgroundlayer.resizeWorld();
 
     this.createItems();
-    this.createDoors();    
+    this.createDoors();
+    this.createMonsters();
 
     //create player
     var result = this.findObjectsByType('playerStart', this.map, 'objectsLayer')
@@ -54,9 +55,6 @@ TopDownGame.Game.prototype = {
       tween.loop(true);
       tween.start();
     
-      this.enemy2 = this.game.add.sprite(10, 10, 'enemy1');
-      this.game.physics.arcade.enable(this.enemy2);
-      this.enemy2.body.immovable = true;
     
       
 
@@ -95,7 +93,31 @@ TopDownGame.Game.prototype = {
       this.teleportx = result[1].x 
       this.teleporty = result[1].y;
   },
- createNPC: function() {
+    
+ createMonsters: function() {
+    
+    this.monsters = this.game.add.group();
+    this.monsters.enableBody = true;
+    result = this.findObjectsByType('monster', this.map, 'objectsLayer');
+    result.forEach(function(element){
+        
+        
+        
+      var monster = this.createFromTiledObject(element, this.monsters);
+        
+    
+        var tween = this.game.add.tween(monster);
+    
+     tween.to({ x: [monster.x+40, monster.x]}, 3000, "Linear");
+      tween.loop(true);
+      tween.start();
+        
+    }, this);
+     
+     
+ },
+ 
+     createNPC: function() {
     //create NPC
     this.NPC = this.game.add.group();
     this.NPC.enableBody = true;
@@ -125,6 +147,7 @@ TopDownGame.Game.prototype = {
       Object.keys(element.properties).forEach(function(key){
         sprite[key] = element.properties[key];
       });
+      return sprite;
   },
   update: function() {
     //collision
@@ -133,7 +156,7 @@ TopDownGame.Game.prototype = {
     this.game.physics.arcade.overlap(this.player, this.doors, this.enterDoor, null, this);
     this.game.physics.arcade.collide(this.player, this.thisgirl, this.talk, null, this);
     this.game.physics.arcade.collide(this.player, this.thisboy, this.talk, null, this);
-    this.game.physics.arcade.collide(this.player, this.enemy1, this.teleport, null, this);
+    this.game.physics.arcade.collide(this.player, this.monsters, this.teleport, null, this);
 
     //player movement
     
