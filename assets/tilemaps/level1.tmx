@@ -123,7 +123,7 @@
 178,2871,0,0,0,0,0,0,0,178,
 178,178,178,178,178,178,178,0,0,222,
 178,0,0,0,0,178,0,0,178,178,
-178,0,0,0,0,178,0,0,0,178,
+178,0,0,0,0,178,2070,0,0,178,
 178,0,0,0,0,178,178,0,0,222,
 178,0,178,222,0,178,0,0,0,178,
 178,0,178,0,0,0,0,0,178,178,
@@ -156,7 +156,7 @@
 2773,2773,0,0,0,0,0,0,2998,2998,
 2773,2773,2773,0,0,0,0,2998,2998,2998,
 178,2773,2773,0,0,0,0,2998,2998,178,
-178,178,2773,0,0,0,0,2998,178,178,
+178,178,2773,2078,0,0,2078,2998,178,178,
 178,178,178,222,0,0,222,178,178,178,
 178,178,178,222,222,222,222,178,178,178
 </data>
@@ -351,7 +351,7 @@
     <property name="type" value="monster"/>
    </properties>
   </object>
-  <object id="79" gid="2911" x="41" y="868" width="16" height="16">
+  <object id="79" gid="2911" x="62" y="869" width="16" height="16">
    <properties>
     <property name="sprite" value="monster"/>
     <property name="type" value="monster"/>
@@ -388,13 +388,13 @@
     <property name="type" value="monster"/>
    </properties>
   </object>
-  <object id="106" gid="2911" x="43" y="924" width="16" height="16">
+  <object id="106" gid="2911" x="50" y="924" width="16" height="16">
    <properties>
     <property name="sprite" value="monster"/>
     <property name="type" value="monster"/>
    </properties>
   </object>
-  <object id="107" gid="2911" x="74" y="896" width="16" height="16">
+  <object id="107" gid="2911" x="72" y="898" width="16" height="16">
    <properties>
     <property name="sprite" value="monster"/>
     <property name="type" value="monster"/>
