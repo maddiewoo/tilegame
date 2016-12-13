@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="10" height="60" tilewidth="16" tileheight="16" nextobjectid="81">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="10" height="70" tilewidth="16" tileheight="16" nextobjectid="110">
  <tileset firstgid="1" name="tiles" tilewidth="16" tileheight="16" tilecount="3520" columns="44">
   <image source="../images/tiles.png" width="705" height="1280"/>
   <terraintypes>
@@ -13,7 +13,7 @@
  <tileset firstgid="3522" name="boss" tilewidth="16" tileheight="16" tilecount="0" columns="2">
   <image source="../../../../Desktop/boss.jpg" width="40" height="52"/>
  </tileset>
- <layer name="backgroundLayer" width="10" height="60" offsetx="-1" offsety="-2">
+ <layer name="backgroundLayer" width="10" height="70" offsetx="-1" offsety="-2">
   <data encoding="csv">
 50,50,50,50,50,50,50,50,50,50,
 50,50,50,50,50,50,50,50,50,50,
@@ -74,10 +74,20 @@
 50,50,50,50,50,50,50,50,50,50,
 50,50,50,50,50,50,50,50,50,50,
 50,50,50,50,50,50,50,50,50,50,
-50,50,50,50,50,50,50,50,50,50
+50,50,50,50,50,50,50,50,50,50,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer name="blockedLayer" width="10" height="60">
+ <layer name="blockedLayer" width="10" height="70">
   <data encoding="csv">
 1896,1896,1896,1896,1896,1896,1896,1896,1896,1896,
 1896,0,0,0,0,1896,1896,1896,1896,1896,
@@ -138,18 +148,34 @@
 1632,0,0,0,0,0,0,0,0,1632,
 1632,0,0,0,0,0,0,0,0,1632,
 1632,1632,1632,1632,0,0,1632,1632,1632,1632,
-1632,1632,1632,1632,1632,1632,1632,1632,1632,1632
+1632,1632,1632,1632,1632,1632,1632,1632,1632,1632,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
  <objectgroup name="objectsLayer">
+  <properties>
+   <property name="sprite" value="monster"/>
+   <property name="type" value="monster"/>
+  </properties>
   <object id="1" gid="1216" x="74" y="148" width="28" height="27">
    <properties>
+    <property name="score" value="10"/>
     <property name="sprite" value="bluecup"/>
     <property name="type" value="item"/>
    </properties>
   </object>
   <object id="2" gid="1260" x="22" y="469" width="22" height="21">
    <properties>
+    <property name="score" value="10"/>
     <property name="sprite" value="greencup"/>
     <property name="type" value="item"/>
    </properties>
@@ -171,24 +197,28 @@
   </object>
   <object id="5" gid="1216" x="34" y="93" width="25" height="27">
    <properties>
+    <property name="score" value="10"/>
     <property name="sprite" value="bluecup"/>
     <property name="type" value="item"/>
    </properties>
   </object>
   <object id="6" gid="1216" x="81" y="214" width="24" height="27">
    <properties>
+    <property name="score" value="10"/>
     <property name="sprite" value="bluecup"/>
     <property name="type" value="item"/>
    </properties>
   </object>
   <object id="7" gid="1216" x="74" y="71" width="24" height="26">
    <properties>
+    <property name="score" value="10"/>
     <property name="sprite" value="bluecup"/>
     <property name="type" value="item"/>
    </properties>
   </object>
   <object id="8" gid="1260" x="120" y="575" width="20" height="22">
    <properties>
+    <property name="score" value="10"/>
     <property name="sprite" value="bluecup"/>
     <property name="type" value="item"/>
    </properties>
@@ -215,18 +245,21 @@
   </object>
   <object id="14" gid="1260" x="63" y="696" width="16" height="16">
    <properties>
+    <property name="score" value="10"/>
     <property name="sprite" value="bluecup"/>
     <property name="type" value="item"/>
    </properties>
   </object>
   <object id="16" gid="2787" x="121" y="523" width="16" height="16">
    <properties>
+    <property name="score" value="10"/>
     <property name="sprite" value="greencup"/>
     <property name="type" value="item"/>
    </properties>
   </object>
   <object id="18" gid="2787" x="120" y="633" width="16" height="16">
    <properties>
+    <property name="score" value="10"/>
     <property name="sprite" value="greencup"/>
     <property name="type" value="item"/>
    </properties>
@@ -251,11 +284,12 @@
   </object>
   <object id="37" gid="1919" x="70" y="943" width="16" height="16">
    <properties>
+    <property name="score" value="50"/>
     <property name="sprite" value="box"/>
     <property name="type" value="goal"/>
    </properties>
   </object>
-  <object id="39" gid="2998" x="69" y="888" width="16" height="16">
+  <object id="39" gid="2998" x="98" y="841" width="28" height="32">
    <properties>
     <property name="sprite" value="boss"/>
     <property name="type" value="monster"/>
@@ -263,11 +297,12 @@
   </object>
   <object id="40" gid="3275" x="42" y="781" width="16" height="16">
    <properties>
+    <property name="score" value="10"/>
     <property name="sprite" value="bluecup"/>
     <property name="type" value="item"/>
    </properties>
   </object>
-  <object id="68" gid="3231" x="110" y="829" width="16" height="16">
+  <object id="68" gid="3231" x="107" y="829" width="16" height="16">
    <properties>
     <property name="sprite" value="bluecup"/>
     <property name="type" value="item"/>
@@ -291,40 +326,89 @@
     <property name="type" value="monster"/>
    </properties>
   </object>
-  <object id="72" gid="2998" x="83" y="678" width="16" height="16">
+  <object id="72" gid="2998" x="65" y="674" width="16" height="16">
    <properties>
     <property name="sprite" value="monster"/>
     <property name="type" value="monster"/>
    </properties>
   </object>
-  <object id="73" gid="2911" x="17" y="926" width="16" height="16">
+  <object id="73" gid="2911" x="21" y="924" width="16" height="16">
    <properties>
     <property name="sprite" value="monster"/>
     <property name="type" value="monster"/>
    </properties>
   </object>
-  <object id="77" gid="2911" x="48" y="925" width="16" height="16">
+  <object id="77" gid="2911" x="111" y="866" width="16" height="16">
    <properties>
     <property name="sprite" value="monster"/>
     <property name="type" value="monster"/>
    </properties>
   </object>
-  <object id="78" gid="2911" x="89" y="926" width="16" height="16">
+  <object id="78" gid="2911" x="94" y="866" width="16" height="16">
    <properties>
     <property name="sprite" value="monster"/>
     <property name="type" value="monster"/>
    </properties>
   </object>
-  <object id="79" gid="2911" x="110" y="925" width="16" height="16">
+  <object id="79" gid="2911" x="41" y="868" width="16" height="16">
    <properties>
     <property name="sprite" value="monster"/>
     <property name="type" value="monster"/>
    </properties>
   </object>
-  <object id="80" gid="2911" x="32" y="925" width="16" height="16">
+  <object id="82" gid="2911" x="22" y="896" width="16" height="16">
    <properties>
     <property name="sprite" value="monster"/>
-    <property name="type " value="monster"/>
+    <property name="type" value="monster"/>
+   </properties>
+  </object>
+  <object id="83" gid="2911" x="127" y="866" width="16" height="16">
+   <properties>
+    <property name="sprite" value="monster"/>
+    <property name="type" value="monster"/>
+   </properties>
+  </object>
+  <object id="84" gid="2911" x="23" y="868" width="16" height="16">
+   <properties>
+    <property name="sprite" value="monster"/>
+    <property name="type" value="monster"/>
+   </properties>
+  </object>
+  <object id="85" gid="2787" x="111" y="410" width="16" height="16">
+   <properties>
+    <property name="score" value="10"/>
+    <property name="sprite" value="bluecup"/>
+    <property name="type" value="item"/>
+   </properties>
+  </object>
+  <object id="105" gid="2911" x="42" y="896" width="16" height="16">
+   <properties>
+    <property name="sprite" value="monster"/>
+    <property name="type" value="monster"/>
+   </properties>
+  </object>
+  <object id="106" gid="2911" x="43" y="924" width="16" height="16">
+   <properties>
+    <property name="sprite" value="monster"/>
+    <property name="type" value="monster"/>
+   </properties>
+  </object>
+  <object id="107" gid="2911" x="67" y="894" width="16" height="16">
+   <properties>
+    <property name="sprite" value="monster"/>
+    <property name="type" value="monster"/>
+   </properties>
+  </object>
+  <object id="108" gid="2911" x="97" y="928" width="16" height="16">
+   <properties>
+    <property name="sprite" value="monste"/>
+    <property name="type" value="monster"/>
+   </properties>
+  </object>
+  <object id="109" gid="2911" x="110" y="893" width="16" height="16">
+   <properties>
+    <property name="sprite" value="monster"/>
+    <property name="type" value="monster"/>
    </properties>
   </object>
  </objectgroup>
