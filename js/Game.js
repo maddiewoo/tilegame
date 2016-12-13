@@ -182,6 +182,16 @@ TopDownGame.Game.prototype = {
     else if(this.cursors.right.isDown) {
       this.player.body.velocity.x += 50;
     }
+     if (this.textbox != null){
+    var deltax = (this.talkx - this.player.x);
+    var deltay = (this.talky - this.player.y);
+    var lady = Math.sqrt (deltax * deltax + deltay * deltay);
+    if (lady > 20){
+        this.textbox.destroy();
+        this.textbox = null;
+        console.log (lady);
+    }
+   }
   },
   collect: function(player, collectable) {
     console.log('yummy!');
