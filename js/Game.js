@@ -61,7 +61,7 @@ TopDownGame.Game.prototype = {
       tween.loop(true);
       tween.start();
     
-    this.textbox = null; 
+    
       
 
     //the camera will follow the player in the world
@@ -182,24 +182,17 @@ TopDownGame.Game.prototype = {
     else if(this.cursors.right.isDown) {
       this.player.body.velocity.x += 50;
     }
-     
-    if (this.textbox != null){
-    var deltax = (this.talkx - this.player.x);
-    var deltay = (this.talky - this.player.y);
-    var lady = Math.sqrt (deltax * deltax + deltay * deltay);
-    if (lady > 20){
-        this.textbox.destroy();
-        this.textbox = null;
-        console.log (lady);
-    }
-   }
   },
   collect: function(player, collectable) {
     console.log('yummy!');
        
       this.score += parseInt(collectable.score);
     this.scoreText.text = 'Score: ' + this.score;
-
+  
+if(this.score>160)
+   {
+      this.showDialog("You Win");
+   }
       
 
     //remove sprite
@@ -219,8 +212,7 @@ TopDownGame.Game.prototype = {
   talk: function(player, NPC) {
       this.showDialog("Hey")
       
-      this.talkx = NPC.x;
-      this.talky = NPC.y;
+      this.textbox.visible = true;
       
       
   },
