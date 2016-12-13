@@ -183,17 +183,14 @@ TopDownGame.Game.prototype = {
   collect: function(player, collectable) {
     console.log('yummy!');
        
-      this.score += parseInt(collectable.score)
-    this.scoreText.text = 'Score: ' + this.score
+      this.score += parseInt(collectable.score);
+    this.scoreText.text = 'Score: ' + this.score;
 
       
 
     //remove sprite
     collectable.destroy();
   },
-    
-    
-    
   enterDoor: function(player, door) {
     
       if (typeof door.targetTilemap == 'undefined' ||door.targetTilemap == null) {
@@ -206,7 +203,7 @@ TopDownGame.Game.prototype = {
     
   },
   talk: function(player, NPC) {
-      this.showDialog("Hey, touch the enemies and see what happens.")
+      this.showDialog("Hey")
       
       this.textbox.visible = true;
       
