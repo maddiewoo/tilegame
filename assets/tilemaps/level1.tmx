@@ -75,9 +75,9 @@
 50,50,50,50,50,50,50,50,50,50,
 50,50,50,50,50,50,50,50,50,50,
 50,50,50,50,50,50,50,50,50,50,
-2823,2823,2823,2823,2823,2823,2823,2823,2823,2823,
-2823,2823,2823,2823,2823,2823,2823,2823,2823,2823,
-2823,2823,2823,2823,2823,2823,2823,2823,2823,2823,
+2823,2823,2779,2823,2823,2823,2823,2823,2823,2823,
+2823,2823,2779,2823,2823,2823,2823,2823,2823,2823,
+2823,2823,2779,2823,2823,2823,2823,2823,2823,2823,
 2823,2823,2823,2823,2823,2823,2823,2823,2823,2823,
 2823,2823,2823,2823,2823,2823,2823,2823,2823,2823,
 2823,2823,2823,2823,2823,2823,2823,2823,2823,2823,
@@ -124,10 +124,10 @@
 0,178,178,178,178,178,178,0,0,222,
 0,0,0,0,0,178,0,0,178,178,
 0,0,0,0,0,178,0,0,0,178,
-0,0,0,0,0,178,178,0,0,178,
+0,0,0,0,0,178,178,0,0,0,
 0,0,178,222,0,178,0,0,0,178,
 0,0,178,0,0,0,0,0,178,178,
-0,0,178,178,178,178,178,0,0,178,
+0,0,178,178,178,178,0,0,0,178,
 0,0,0,0,0,0,178,0,0,222,
 0,222,222,222,0,0,222,222,222,222,
 0,1720,1720,0,0,0,1544,1720,1720,1720,
@@ -139,7 +139,7 @@
 0,1720,0,0,0,0,0,0,0,1720,
 0,1808,0,0,0,0,0,0,0,1808,
 0,1808,0,0,1544,1544,1544,1544,1544,1808,
-0,1808,0,0,0,0,0,0,0,1808,
+0,0,0,0,0,0,0,0,0,1808,
 0,1808,1808,1808,0,0,0,0,0,1808,
 0,1808,1808,1808,1808,1808,0,0,0,1808,
 0,0,0,0,0,0,0,0,0,1632,
@@ -155,10 +155,10 @@
 2773,2773,0,0,0,0,0,0,2998,2998,
 2773,2773,0,0,0,0,0,0,2998,2998,
 2773,2773,2773,0,0,0,0,2998,2998,2998,
-0,2773,2773,0,0,0,0,2998,2998,0,
-0,0,2773,0,0,0,0,2998,0,0,
-0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0
+178,2773,2773,0,0,0,0,2998,2998,178,
+178,178,2773,0,0,0,0,2998,178,178,
+178,178,178,222,0,0,222,178,178,178,
+178,178,178,222,222,222,222,178,178,178
 </data>
  </layer>
  <objectgroup name="objectsLayer">
@@ -282,11 +282,11 @@
     <property name="type" value="monster"/>
    </properties>
   </object>
-  <object id="37" gid="1919" x="73" y="1113" width="16" height="16">
+  <object id="37" gid="1919" x="71" y="1099" width="16" height="16">
    <properties>
     <property name="score" value="50"/>
     <property name="sprite" value="box"/>
-    <property name="type" value="goal"/>
+    <property name="type" value="item"/>
    </properties>
   </object>
   <object id="39" gid="2998" x="66" y="1031" width="28" height="32">
@@ -345,7 +345,7 @@
     <property name="type" value="monster"/>
    </properties>
   </object>
-  <object id="78" gid="2911" x="94" y="866" width="16" height="16">
+  <object id="78" gid="2911" x="62" y="866" width="16" height="16">
    <properties>
     <property name="sprite" value="monster"/>
     <property name="type" value="monster"/>
@@ -382,7 +382,7 @@
     <property name="type" value="item"/>
    </properties>
   </object>
-  <object id="105" gid="2911" x="42" y="896" width="16" height="16">
+  <object id="105" gid="2911" x="49" y="895" width="16" height="16">
    <properties>
     <property name="sprite" value="monster"/>
     <property name="type" value="monster"/>
@@ -394,19 +394,19 @@
     <property name="type" value="monster"/>
    </properties>
   </object>
-  <object id="107" gid="2911" x="67" y="894" width="16" height="16">
+  <object id="107" gid="2911" x="74" y="896" width="16" height="16">
    <properties>
     <property name="sprite" value="monster"/>
     <property name="type" value="monster"/>
    </properties>
   </object>
-  <object id="108" gid="2911" x="102" y="925" width="16" height="16">
+  <object id="108" gid="2911" x="107" y="925" width="16" height="16">
    <properties>
     <property name="sprite" value="monster"/>
     <property name="type" value="monster"/>
    </properties>
   </object>
-  <object id="109" gid="2911" x="110" y="893" width="16" height="16">
+  <object id="109" gid="2911" x="122" y="892" width="16" height="16">
    <properties>
     <property name="sprite" value="monster"/>
     <property name="type" value="monster"/>
