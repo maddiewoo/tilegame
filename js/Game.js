@@ -111,7 +111,7 @@ TopDownGame.Game.prototype = {
     
         var tween = this.game.add.tween(monster);
     
-     tween.to({ x: [monster.x+40, monster.x]}, 2000, "Linear");
+     tween.to({ x: [monster.x+50, monster.x]}, 2500, "Linear");
       tween.loop(true);
       tween.start();
         
