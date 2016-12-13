@@ -157,8 +157,8 @@ TopDownGame.Game.prototype = {
     this.game.physics.arcade.collide(this.player, this.blockedLayer);
     this.game.physics.arcade.overlap(this.player, this.items, this.collect, null, this);
     this.game.physics.arcade.overlap(this.player, this.doors, this.enterDoor, null, this);
-    this.game.physics.arcade.collide(this.player, this.thisgirl, this.talk, null, this);
-    this.game.physics.arcade.collide(this.player, this.thisboy, this.talk, null, this);
+    this.game.physics.arcade.collide(this.player, this.thisgirl, this.talk1, null, this);
+    this.game.physics.arcade.collide(this.player, this.thisboy, this.talk2, null, this);
     this.game.physics.arcade.collide(this.player, this.monsters, this.teleport, null, this);
 
     //player movement
@@ -186,7 +186,7 @@ TopDownGame.Game.prototype = {
   collect: function(player, collectable) {
     console.log('yummy!');
        
-      this.score += parseInt(collectable.score);
+      this.score += 10;
     this.scoreText.text = 'Score: ' + this.score;
   
 if(this.score>160)
@@ -209,12 +209,19 @@ if(this.score>160)
     this.player.y = this.teleporty
     
   },
-  talk: function(player, NPC) {
-      this.showDialog("Hey")
-      
+  talk1: function(player, NPC) {
+      this.showDialog("Find Boy")
+
       this.textbox.visible = true;
+
+      this.talkx = NPC.x;
+      this.talky = NPC.y; 
+  },
+  talk2: function(player, NPC) {
+      this.showDialog("Green brick")
       
-      
+      this.talkx = NPC.x;
+      this.talky = NPC.y; 
   },
     teleport: function(player, NPC) { console.log("this returns to starting spot" +this.startingx        +this.startingy);
         this.player.x = this.startingx 
