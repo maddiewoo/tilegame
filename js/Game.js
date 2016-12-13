@@ -41,7 +41,7 @@ TopDownGame.Game.prototype = {
     //score
       this.score = 0;
    
- this.scoreText = this.game.add.text(0,0, 'Score: 0', { fontSize: '30px', fill: '#fff' });
+ this.scoreText = this.game.add.text(5, 5, 'Score: 0', { fontSize: '32px', fill: '#fff' });
       this.scoreText.fixedToCamera = true;
     
       // creating thisboy
@@ -111,7 +111,7 @@ TopDownGame.Game.prototype = {
     
         var tween = this.game.add.tween(monster);
     
-     tween.to({ x: [monster.x+40, monster.x]}, 3000, "Linear");
+     tween.to({ x: [monster.x+40, monster.x]}, 2000, "Linear");
       tween.loop(true);
       tween.start();
         
@@ -196,7 +196,7 @@ TopDownGame.Game.prototype = {
   collect: function(player, collectable) {
     console.log('yummy!');
        
-      this.score += parseInt(collectable.score);
+      this.score += 10;
     this.scoreText.text = 'Score: ' + this.score;
   
 if(this.score>160)
