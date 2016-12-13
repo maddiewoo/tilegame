@@ -37,6 +37,12 @@ TopDownGame.Game.prototype = {
     this.game.physics.arcade.enable(this.thisgirl);
       
     this.thisgirl.body.immovable = true;
+      
+    //score
+      this.score = 0;
+   
+ this.scoreText = this.game.add.text(5, 5, 'Score: 0', { fontSize: '30px', fill: '#fff' });
+      this.scoreText.fixedToCamera = true;
     
       // creating thisboy
     this.thisboy = this.game.add.sprite(result[1].x, result[1].y, 'thisboy');
@@ -75,10 +81,7 @@ TopDownGame.Game.prototype = {
       this.createFromTiledObject(element, this.items);
     }, this);
       
-      this.score = 0;
-   
- this.scoreText = this.game.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#fff' });
-      this.scoreText.fixedToCamera = true;
+    
   },
   createDoors: function() {
     //create doors
