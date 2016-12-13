@@ -199,7 +199,7 @@ TopDownGame.Game.prototype = {
       this.score += 10;
     this.scoreText.text = 'Score: ' + this.score;
   
-if(this.score>160)
+if(this.score>120)
    {
       this.showDialog("You Win");
    }

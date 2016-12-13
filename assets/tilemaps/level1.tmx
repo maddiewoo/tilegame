@@ -292,7 +292,7 @@
   <object id="39" gid="2998" x="59" y="1063" width="28" height="32">
    <properties>
     <property name="sprite" value="boss"/>
-    <property name="type" value="boss"/>
+    <property name="type" value="monster"/>
    </properties>
   </object>
   <object id="40" gid="3275" x="42" y="781" width="16" height="16">
@@ -345,7 +345,7 @@
     <property name="type" value="monster"/>
    </properties>
   </object>
-  <object id="78" gid="2911" x="62" y="866" width="16" height="16">
+  <object id="78" gid="2911" x="50" y="987" width="16" height="16">
    <properties>
     <property name="sprite" value="monster"/>
     <property name="type" value="monster"/>
@@ -382,7 +382,7 @@
     <property name="type" value="item"/>
    </properties>
   </object>
-  <object id="105" gid="2911" x="49" y="895" width="16" height="16">
+  <object id="105" gid="2911" x="91" y="1014" width="16" height="16">
    <properties>
     <property name="sprite" value="monster"/>
     <property name="type" value="monster"/>
